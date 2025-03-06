@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    color: #333; /* Default text color */
+}
+
+body {
+    background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.input-checkbox {
+    margin-right: 10px;
+}
+
+.education-head {
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.resume {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+    margin-bottom: 20px;
+}
+
+.navbtn {
+    margin-right: 10px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.post {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.contacts span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.line {
+    border-bottom: 2px solid #000;
+    margin-bottom: 20px;
+}
+
+.mainbody {
+    display: flex;
+    gap: 20px;
+}
+
+.leftside,
+.rightside {
+    flex: 1;
+}
+
+.border {
+    border-left: 2px solid #000;
+    height: 100%;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.skill,
+.language,
+.achieve,
+.edublock {
+    margin-bottom: 10px;
+}
+
+.btn {
+    margin-right: 10px;
+}
+
+.resume {
+    width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+/* Header Section */
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.head .main .name {
+    font-size: 40px;
+    font-weight: 600;
+    color: #2c3e50; /* Dark blue for a professional look */
+}
+
+.head .main span:nth-child(2) {
+    color: #666;
+    font-size: 40px;
+}
+
+.head .main .post {
+    font-size: 18px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.head .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Space between contact items */
+    text-align: left; /* Align text to the left */
+}
+
+.head .contacts .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between icon and text */
+}
+
+.head .contacts .symbol {
+    font-size: 15px;
+    color: #666;
+}
+
+/* Line Separator */
+.line {
+    height: 1px;
+    background-color: #ccc;
+    margin: 25px 0;
+}
+
+/* Main Body Layout */
+.mainbody {
+    display: flex;
+    gap: 20px;
+}
+
+.mainbody .border {
+    width: 1px;
+    background-color: #ccc;
+}
+
+.mainbody .leftside,
+.mainbody .rightside {
+    flex: 1;
+}
+
+.mainbody .rightside {
+    padding-left: 20px;
+}
+
+/* Section Titles */
+.title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2c3e50; /* Dark blue for titles */
+    margin-bottom: 15px;
+    border-bottom: 2px solid #3498db; /* Blue border for titles */
+    padding-bottom: 5px;
+}
+
+/* Skills, Languages, Achievements, etc. */
+.skill,
+.language,
+.achieve,
+.edublock {
+    margin-bottom: 10px;
+}
+
+.skill span,
+.language span,
+.achieve span,
+.edublock span {
+    font-size: 14px;
+    color: #333;
+}
+
+.edublock .education-head {
+    font-size: 17px;
+    font-weight: 600;
+    color: #2c3e50; /* Dark blue for education headings */
+}
+
+/* Buttons */
+button {
+    margin: 10px 0;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.btn-success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+button.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Floating Buttons */
+.nav {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.navbtn {
+    height: 50px;
+    width: 140px;
+    border-radius: 8px; /* Slightly rounded corners for a modern look */
+    border: 2px solid #fff;
+    background-color: #fff;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    color: #333;
+}
+
+.navbtn:hover {
+    background-color: #000;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .resume {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .head .contacts {
+        text-align: left;
+        margin-top: 15px;
+    }
+
+    .mainbody {
+        flex-direction: column;
+    }
+
+    .mainbody .border {
+        display: none;
+    }
+
+    .mainbody .rightside {
+        padding-left: 0;
+    }
+
+    .nav {
+        top: 10px;
+        left: 10px;
+    }
+
+    .navbtn {
+        height: 40px;
+        width: 40px;
+        font-size: 16px;
+    }
+}
